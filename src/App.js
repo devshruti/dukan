@@ -1,23 +1,22 @@
 import logo from './logo.svg';
 import './App.css';
+import { CSSReset, Box, Flex } from '@chakra-ui/react';
+import Sidebar from './Components/Sidebar';
+import DashboardHeader from './Components/DashboardHeader';
+import Payouts from './pages/Payouts';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+       <CSSReset />
+      <Flex>
+        <Sidebar />
+        <Box ml="200px" flex="1" bg={"gray.50"}>
+          <DashboardHeader />
+          <Payouts/>
+          {/* Add the main content of your application here */}
+        </Box>
+      </Flex>
     </div>
   );
 }
