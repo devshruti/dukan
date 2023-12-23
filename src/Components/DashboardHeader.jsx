@@ -43,7 +43,7 @@ const DashboardHeader = () => {
             </Box>
 
             {/* Description Box */}
-            <Box display="flex" h={"40px"} alignItems="center" justifyContent="end">
+            <Box display="flex" h={"40px"} alignItems="center" justifyContent="end" mr={"6%"}>
                 <Flex gap={"4px"}
                     justifyContent="flex-end"
                     // border={"2px solid gray"}

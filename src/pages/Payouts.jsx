@@ -27,14 +27,14 @@ const Payouts = () => {
             color={"#1A181E"}
         >
             <Box>
-                <Flex justify={"space-between"}>
+                <Flex justify={"space-between"} m={"0 3%"}>
                     <Text fontSize={"20px"} fontWeight={500}>Overview</Text>
                     <Select w={"120px"} h={"26px"} fontSize={"13px"} color={"#4D4D4D"}>
                         <option value='default'>This Month</option>
                         <option value='filter'>Filter by date</option>
                     </Select>
                 </Flex>
-                <Flex justify={"space-evenly"} mt={8} w={"full"} borderRadius={4} >
+                <Flex justify={"space-evenly"} mt={4} w={"full"} borderRadius={4} >
                     <Box w={"30%"} borderRadius={6} bg={"#146EB4"} mb={"2.1%"}>
                         <Box p={4} bg={"#146EB4"} borderRadius={6} color={"#FFFFFF"}  >
                             <Flex m={"2%"}>
@@ -234,9 +234,8 @@ const Payouts = () => {
                                 <Th>Order ID</Th>
                                 <Th>Status</Th>
                                 <Th>Transaction ID</Th>
+                                <Th>Refund date</Th>
                                 <Th>Order Amount</Th>
-                                <Th>Transaction Fee</Th>
-                                <Th>Total</Th>
                             </Tr>
                         </Thead>
                         <Tbody color={"#1A181E"} fontSize={"14px"} >
@@ -244,57 +243,43 @@ const Payouts = () => {
                                 <Td color={"#146EB4"}>#281209</Td>
                                 <Td><Flex><Image src={round} mt={"4.5%"} mr={"2%"} w={2} h={2}/> <Text>Processing</Text></Flex> </Td>
                                 <Td>131634495747</Td>
-                                <Td>₹10,125.00</Td>
+                                <Td>Today, 08:45 PM</Td>
                                 <Td>₹1,125.00</Td>
-                                <Td>₹9,312</Td>
                             </Tr>
                             <Tr >
                                 <Td color={"#146EB4"}>#281209</Td>
                                 <Td><Flex><Image src={green} mt={"4.5%"} mr={"2%"} w={2} h={2}/> <Text>Successful</Text></Flex> </Td>
                                 <Td>131634495747</Td>
-                                <Td>₹10,125.00</Td>
+                                <Td>Yesterday, 3:00 PM</Td>
                                 <Td>₹1,125.00</Td>
-                                <Td>₹9,312</Td>
                             </Tr>
                             <Tr >
                                 <Td color={"#146EB4"}>#281209</Td>
                                 <Td><Flex><Image src={green} mt={"4.5%"} mr={"2%"} w={2} h={2}/> <Text>Successful</Text></Flex> </Td>
                                 <Td>131634495747</Td>
-                                <Td>₹10,125.00</Td>
+                                <Td>12 Jul 2023, 03:00 PM</Td>
                                 <Td>₹1,125.00</Td>
-                                <Td>₹9,312</Td>
                             </Tr>
                             <Tr >
                                 <Td color={"#146EB4"}>#281209</Td>
                                 <Td><Flex><Image src={green} mt={"4.5%"} mr={"2%"} w={2} h={2}/> <Text>Successful</Text></Flex> </Td>
                                 <Td>131634495747</Td>
-                                <Td>₹10,125.00</Td>
+                                <Td>12 Jul 2023, 03:00 PM</Td>
                                 <Td>₹1,125.00</Td>
-                                <Td>₹9,312</Td>
                             </Tr>
                             <Tr >
                                 <Td color={"#146EB4"}>#281209</Td>
                                 <Td><Flex><Image src={green} mt={"4.5%"} mr={"2%"} w={2} h={2}/> <Text>Successful</Text></Flex> </Td>
                                 <Td>131634495747</Td>
-                                <Td>₹10,125.00</Td>
+                                <Td>12 Jul 2023, 03:00 PM</Td>
                                 <Td>₹1,125.00</Td>
-                                <Td>₹9,312</Td>
                             </Tr>
                             <Tr >
                                 <Td color={"#146EB4"}>#281209</Td>
                                 <Td><Flex><Image src={green} mt={"4.5%"} mr={"2%"} w={2} h={2}/> <Text>Successful</Text></Flex> </Td>
                                 <Td>131634495747</Td>
-                                <Td>₹10,125.00</Td>
+                                <Td>12 Jul 2023, 03:00 PM</Td>
                                 <Td>₹1,125.00</Td>
-                                <Td>₹9,312</Td>
-                            </Tr>
-                            <Tr >
-                                <Td color={"#146EB4"}>#281209</Td>
-                                <Td><Flex><Image src={green} mt={"4.5%"} mr={"2%"} w={2} h={2}/> <Text>Successful</Text></Flex> </Td>
-                                <Td>131634495747</Td>
-                                <Td>₹10,125.00</Td>
-                                <Td>₹1,125.00</Td>
-                                <Td>₹9,312</Td>
                             </Tr>
                         </Tbody>
                     </Table>
