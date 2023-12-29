@@ -11,7 +11,7 @@ function App() {
        <CSSReset />
       <Flex>
         <Sidebar />
-        <Box ml="200px" flex="1" bg={"gray.50"}>
+        <Box ml="170px" flex="1" bg={"gray.50"}>
           <DashboardHeader />
           <Payouts/>
           {/* Add the main content of your application here */}

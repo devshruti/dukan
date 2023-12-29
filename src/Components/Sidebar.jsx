@@ -3,19 +3,19 @@ import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Box, Flex, Image, Text } from '@chakra-ui/react';
 import img from "../Assets/Image.png"
-import chevron from "../Assets/Chevron Down.png"
-import home from "../Assets/Vector.png"
-import order from "../Assets/orders.png"
-import Appearance from "../Assets/appearance.png"
-import product from "../Assets/Product.png"
-import Discounts from "../Assets/discount.png"
-import Audience from "../Assets/audience.png"
-import Payouts from "../Assets/Payouts.png"
-import marketing from "../Assets/MArketing.png"
-import delivery from "../Assets/Delivery.png"
-import Plugins from "../Assets/plugins.png"
-import analytic from "../Assets/Analytics.png"
-import frame from "../Assets/Frame 1113.png"
+import chevron from "../Assets/Chevron Down.svg"
+import home from "../Assets/home.svg"
+import order from "../Assets/orders.svg"
+import Appearance from "../Assets/appearance.svg"
+import product from "../Assets/Product.svg"
+import Discounts from "../Assets/discount.svg"
+import Audience from "../Assets/audience.svg"
+import Payouts from "../Assets/Payouts.svg"
+import marketing from "../Assets/MArketing.svg"
+import delivery from "../Assets/Delivery.svg"
+import Plugins from "../Assets/plugins.svg"
+import analytic from "../Assets/Analytics.svg"
+import frame from "../Assets/Frame 1113.svg"
 
 const Sidebar = () => {
     const location = useLocation();
@@ -23,16 +23,16 @@ const Sidebar = () => {
 
     return (
         <Box
-            w="200px"
+            w="190px"
             h="100vh"
             bg="#1E2640"
             color="white"
-            p="4"
+            p="4 2 4 2"
             position="fixed"
             left="0"
             top="0"
         >
-            <Flex >
+            <Flex m={2}>
                 <Image src={img} w={"39px"} h={"39px"} />
                 <Box marginLeft={2}>
                     <Text
@@ -43,24 +43,26 @@ const Sidebar = () => {
                         textAlign="left"
                         color="#FFFFFF"
                     >Nishyan</Text>
-                    <Link>
+                    
                         <Text
                             fontWeight="400"
                             fontSize="12px"
                             lineHeight={"16px"}
-                        >Visit store</Text></Link>
+                            textDecoration={"underline"}
+                        ><Link>Visit store</Link></Text>
                 </Box>
                 <Image src={chevron} w={"18px"} h={"14px"} top={3} left={8} position={"relative"} />
             </Flex>
-            <Box mt={8} h={"82%"}>
+            <Box mt={8} h={"83%"}>
                 <Link to="/home">
                     <Flex
                         as="div"
                         align="center"
                         justifyContent="flex-start"
-                        w="full"
+                        w="96%"
+                        m={"auto"}
                         fontSize="14px"
-                        padding="8px 16px"
+                        padding="9px 10px"
                         h="34px"
                         gap="12px"
                         borderRadius={4}
@@ -75,9 +77,10 @@ const Sidebar = () => {
                         as="div"
                         align="center"
                         justifyContent="flex-start"
-                        w="full"
+                        w="96%"
+                        m={"auto"}
                         fontSize="14px"
-                        padding="8px 16px"
+                        padding="9px 10px"
                         h="34px"
                         gap="12px"
                         borderRadius={4}
@@ -92,9 +95,10 @@ const Sidebar = () => {
                         as="div"
                         align="center"
                         justifyContent="flex-start"
-                        w="full"
+                        w="96%"
+                        m={"auto"}
                         fontSize="14px"
-                        padding="8px 16px"
+                        padding="9px 10px"
                         h="34px"
                         gap="12px"
                         borderRadius={4}
@@ -109,9 +113,10 @@ const Sidebar = () => {
                         as="div"
                         align="center"
                         justifyContent="flex-start"
-                        w="full"
+                        w="96%"
+                        m={"auto"}
                         fontSize="14px"
-                        padding="8px 16px"
+                        padding="9px 10px"
                         h="34px"
                         gap="12px"
                         borderRadius={4}
@@ -126,9 +131,10 @@ const Sidebar = () => {
                         as="div"
                         align="center"
                         justifyContent="flex-start"
-                        w="full"
+                        w="96%"
+                        m={"auto"}
                         fontSize="14px"
-                        padding="8px 16px"
+                        padding="9px 10px"
                         h="34px"
                         gap="12px"
                         borderRadius={4}
@@ -143,9 +149,10 @@ const Sidebar = () => {
                         as="div"
                         align="center"
                         justifyContent="flex-start"
-                        w="full"
+                        w="96%"
+                        m={"auto"}
                         fontSize="14px"
-                        padding="8px 16px"
+                        padding="9px 10px"
                         h="34px"
                         gap="12px"
                         borderRadius={4}
@@ -160,9 +167,10 @@ const Sidebar = () => {
                         as="div"
                         align="center"
                         justifyContent="flex-start"
-                        w="full"
+                        w="96%"
+                        m={"auto"}
                         fontSize="14px"
-                        padding="8px 16px"
+                        padding="9px 10px"
                         h="34px"
                         gap="12px"
                         borderRadius={4}
@@ -177,9 +185,10 @@ const Sidebar = () => {
                         as="div"
                         align="center"
                         justifyContent="flex-start"
-                        w="full"
+                        w="96%"
+                        m={"auto"}
                         fontSize="14px"
-                        padding="8px 16px"
+                        padding="9px 10px"
                         h="34px"
                         gap="12px"
                         borderRadius={4}
@@ -194,9 +203,10 @@ const Sidebar = () => {
                         as="div"
                         align="center"
                         justifyContent="flex-start"
-                        w="full"
+                        w="96%"
+                        m={"auto"}
                         fontSize="14px"
-                        padding="8px 16px"
+                        padding="9px 10px"
                         h="34px"
                         gap="12px"
                         borderRadius={4}
@@ -211,9 +221,10 @@ const Sidebar = () => {
                         as="div"
                         align="center"
                         justifyContent="flex-start"
-                        w="full"
+                        w="96%"
+                        m={"auto"}
                         fontSize="14px"
-                        padding="8px 16px"
+                        padding="9px 10px"
                         h="34px"
                         gap="12px"
                         borderRadius={4}
@@ -228,9 +239,10 @@ const Sidebar = () => {
                         as="div"
                         align="center"
                         justifyContent="flex-start"
-                        w="full"
+                        w="96%"
+                        m={"auto"}
                         fontSize="14px"
-                        padding="8px 16px"
+                        padding="9px 10px"
                         h="34px"
                         gap="12px"
                         borderRadius={4}
@@ -246,9 +258,10 @@ const Sidebar = () => {
                 align="center"
                 justifyContent="flex-start"
                 padding="18px 0px"
-                w="full"
+                w="95%"
                 fontSize="14px"
                 h="44px"
+                m="auto"
                 bg={"gray.700"}
                 opacity={"80%"}
                 borderRadius={4}

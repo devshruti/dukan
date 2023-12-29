@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { Box, Button, Flex, Image, Input, InputGroup, InputLeftElement, Select, Table, Tbody, Td, Text, Th, Thead, Tr } from '@chakra-ui/react';
-import help from "../Assets/Help.png"
-import search from "../Assets/search.png"
+import help from "../Assets/Help.svg"
+import helpW from "../Assets/HelpWhite.svg"
+import search from "../Assets/search.svg"
 import right from "../Assets/Chevron RightWhite.png"
 import right1 from "../Assets/Chevron Right.png"
 import sort from "../Assets/sort.png"
@@ -19,7 +20,7 @@ const Payouts = () => {
     };
     return (
         <Box
-            width="96%"
+            width="98%"
             top="96px"
             left="256px"
             gap="32px"
@@ -27,11 +28,11 @@ const Payouts = () => {
             color={"#1A181E"}
         >
             <Box>
-                <Flex justify={"space-between"} m={"0 3%"}>
+                <Flex justify={"space-between"} m={"0 2.7%"}>
                     <Text fontSize={"20px"} fontWeight={500}>Overview</Text>
-                    <Select w={"120px"} h={"26px"} fontSize={"13px"} color={"#4D4D4D"}>
+                    <Select w={"134px"} h={"36px"} fontSize={"16px"} fontFamily={"sans-serif"} fontWeight={"400"} color={"#4D4D4D"} borderRadius={"4px"}>
                         <option value='default'>This Month</option>
-                        <option value='filter'>Filter by date</option>
+                        <option value='filter'>This Date</option>
                     </Select>
                 </Flex>
                 <Flex justify={"space-evenly"} mt={4} w={"full"} borderRadius={4} >
@@ -39,7 +40,7 @@ const Payouts = () => {
                         <Box p={4} bg={"#146EB4"} borderRadius={6} color={"#FFFFFF"}  >
                             <Flex m={"2%"}>
                                 <Text fontSize={"13px"} fontWeight={400} lineHeight={"22px"}>Next Payout</Text>
-                                <Image src={help} w={3} h={3} m={"1.5%"} />
+                                <Image src={helpW} w={3} h={3} m={"1.4%"} />
                             </Flex>
                             <Flex m={"2%"} justify={"space-between"}>
                                 <Text fontSize={"30px"} fontWeight={600} lineHeight={"34px"}>₹2,312.23</Text>
@@ -53,10 +54,10 @@ const Payouts = () => {
                             </Flex>
                         </Box>
                     </Box>
-                    <Box w={"30%"} borderRadius={6} p={4} bg={"#FFFFFF"} mb={"5%"} >
+                    <Box w={"30%"} borderRadius={6} p={4} bg={"#FFFFFF"} mb={"5%"} boxShadow={"0px 2px 6px rgba(26, 24, 30, 0.04)"}>
                         <Flex m={"2%"}>
                             <Text fontSize={"13px"} fontWeight={400} lineHeight={"22px"} color={"#4D4D4D"} >Amount Pending</Text>
-                            <Image src={help} w={3} h={3} m={"1.5%"} />
+                            <Image src={help} w={3} h={3} m={"1.4%"} />
                         </Flex>
                         <Flex m={"2%"} justify={"space-between"}>
                             <Text fontSize={"30px"} fontWeight={600} lineHeight={"34px"}>₹92,312.20</Text>
@@ -67,10 +68,10 @@ const Payouts = () => {
                         </Flex>
 
                     </Box>
-                    <Box w={"30%"} borderRadius={6} p={4} bg={"#FFFFFF"} mb={"5%"} >
+                    <Box w={"30%"} borderRadius={6} p={4} bg={"#FFFFFF"} mb={"5%"} boxShadow={"0px 2px 6px rgba(26, 24, 30, 0.04)"} >
                         <Flex m={"2%"}>
                             <Text fontSize={"13px"} fontWeight={400} lineHeight={"22px"} color={"#4D4D4D"}>Amount Processed</Text>
-                            <Image src={help} w={3} h={3} m={"1.5%"} />
+                            <Image src={help} w={3} h={3} m={"1.4%"} />
                         </Flex>
                         <Flex m={"2%"} justify={"space-between"}>
                             <Text fontSize={"30px"} fontWeight={600} lineHeight={"34px"}>₹23,92,312.19</Text>
@@ -80,7 +81,7 @@ const Payouts = () => {
                     </Box>
                 </Flex>
             </Box>
-            <Box w={"40%"} textAlign={"left"} m={"0 2%"}>
+            <Box w={"40%"} textAlign={"left"} m={"0 2.7%"}>
                 <Text fontSize={"20px"} fontWeight={500} >Transactions | This Month</Text>
                 <Box mt={"2%"}>
                     <Button
@@ -107,7 +108,7 @@ const Payouts = () => {
 
                 </Box>
             </Box>
-            <Box bg={"#FFFFFF"} m={"2%"} id='payouts' style={{ display: activeSection === 'payouts' ? 'block' : 'none' }}>
+            <Box bg={"#FFFFFF"} m={"2.5%"} id='payouts' style={{ display: activeSection === 'payouts' ? 'block' : 'none' }}>
                 <Flex justify={"space-between"}>
                     <InputGroup w={"260px"} m={"1%"}>
                         <InputLeftElement pointerEvents="none">
@@ -133,7 +134,7 @@ const Payouts = () => {
                 <Box>
                     <Table variant="simple" m={"auto"} w={"97%"}>
                         <Thead bg={"#F2F2F2"}>
-                            <Tr>
+                            <Tr justifyContent={"space-between"}>
                                 <Th>Order ID</Th>
                                 <Th>Status</Th>
                                 <Th>Transaction ID</Th>
@@ -143,7 +144,7 @@ const Payouts = () => {
                             </Tr>
                         </Thead>
                         <Tbody color={"#1A181E"} fontSize={"14px"} >
-                            <Tr >
+                            <Tr justifyContent={"space-between"} >
                                 <Td></Td>
                                 <Td><Flex><Image src={round} mt={"4.5%"} mr={"2%"} w={2} h={2}/> <Text>Processing</Text></Flex> </Td>
                                 <Td>131634495747</Td>
@@ -151,7 +152,7 @@ const Payouts = () => {
                                 <Td>₹1,125.00</Td>
                                 <Td>₹9,312</Td>
                             </Tr>
-                            <Tr >
+                            <Tr justifyContent={"space-between"} >
                                 <Td></Td>
                                 <Td><Flex><Image src={green} mt={"4.5%"} mr={"2%"} w={2} h={2}/> <Text>Successful</Text></Flex> </Td>
                                 <Td>131634495747</Td>
@@ -159,7 +160,7 @@ const Payouts = () => {
                                 <Td>₹1,125.00</Td>
                                 <Td>₹9,312</Td>
                             </Tr>
-                            <Tr >
+                            <Tr justifyContent={"space-between"} >
                                 <Td></Td>
                                 <Td><Flex><Image src={green} mt={"4.5%"} mr={"2%"} w={2} h={2}/> <Text>Successful</Text></Flex> </Td>
                                 <Td>131634495747</Td>
@@ -167,7 +168,7 @@ const Payouts = () => {
                                 <Td>₹1,125.00</Td>
                                 <Td>₹9,312</Td>
                             </Tr>
-                            <Tr >
+                            <Tr justifyContent={"space-between"} >
                                 <Td></Td>
                                 <Td><Flex><Image src={green} mt={"4.5%"} mr={"2%"} w={2} h={2}/> <Text>Successful</Text></Flex> </Td>
                                 <Td>131634495747</Td>
@@ -175,7 +176,7 @@ const Payouts = () => {
                                 <Td>₹1,125.00</Td>
                                 <Td>₹9,312</Td>
                             </Tr>
-                            <Tr >
+                            <Tr justifyContent={"space-between"} >
                                 <Td></Td>
                                 <Td><Flex><Image src={green} mt={"4.5%"} mr={"2%"} w={2} h={2}/> <Text>Successful</Text></Flex> </Td>
                                 <Td>131634495747</Td>
@@ -183,7 +184,7 @@ const Payouts = () => {
                                 <Td>₹1,125.00</Td>
                                 <Td>₹9,312</Td>
                             </Tr>
-                            <Tr >
+                            <Tr justifyContent={"space-between"} >
                                 <Td></Td>
                                 <Td><Flex><Image src={green} mt={"4.5%"} mr={"2%"} w={2} h={2}/> <Text>Successful</Text></Flex> </Td>
                                 <Td>131634495747</Td>
@@ -191,7 +192,7 @@ const Payouts = () => {
                                 <Td>₹1,125.00</Td>
                                 <Td>₹9,312</Td>
                             </Tr>
-                            <Tr >
+                            <Tr justifyContent={"space-between"} >
                                 <Td></Td>
                                 <Td><Flex><Image src={green} mt={"4.5%"} mr={"2%"} w={2} h={2}/> <Text>Successful</Text></Flex> </Td>
                                 <Td>131634495747</Td>
@@ -203,7 +204,7 @@ const Payouts = () => {
                     </Table>
                 </Box>
             </Box>
-            <Box bg={"#FFFFFF"} m={"2%"} id='refunds' style={{ display: activeSection === 'refunds' ? 'block' : 'none' }}>
+            <Box bg={"#FFFFFF"} m={"2.5%"} id='refunds' style={{ display: activeSection === 'refunds' ? 'block' : 'none' }}>
                 <Flex justify={"space-between"}>
                     <InputGroup w={"260px"} m={"1%"}>
                         <InputLeftElement pointerEvents="none">
@@ -228,9 +229,9 @@ const Payouts = () => {
                     </Flex>
                 </Flex>
                 <Box>
-                    <Table variant="simple" m={"auto"} p={4} w={"97%"}>
+                    <Table variant="simple" m={"auto"} p={4} w={"97%"} >
                         <Thead bg={"#F2F2F2"}>
-                            <Tr>
+                            <Tr justifyContent={"space-between"}>
                                 <Th>Order ID</Th>
                                 <Th>Status</Th>
                                 <Th>Transaction ID</Th>
@@ -239,42 +240,42 @@ const Payouts = () => {
                             </Tr>
                         </Thead>
                         <Tbody color={"#1A181E"} fontSize={"14px"} >
-                            <Tr >
+                            <Tr justifyContent={"space-between"} >
                                 <Td color={"#146EB4"}>#281209</Td>
                                 <Td><Flex><Image src={round} mt={"4.5%"} mr={"2%"} w={2} h={2}/> <Text>Processing</Text></Flex> </Td>
                                 <Td>131634495747</Td>
                                 <Td>Today, 08:45 PM</Td>
                                 <Td>₹1,125.00</Td>
                             </Tr>
-                            <Tr >
+                            <Tr justifyContent={"space-between"} >
                                 <Td color={"#146EB4"}>#281209</Td>
                                 <Td><Flex><Image src={green} mt={"4.5%"} mr={"2%"} w={2} h={2}/> <Text>Successful</Text></Flex> </Td>
                                 <Td>131634495747</Td>
                                 <Td>Yesterday, 3:00 PM</Td>
                                 <Td>₹1,125.00</Td>
                             </Tr>
-                            <Tr >
+                            <Tr justifyContent={"space-between"} >
                                 <Td color={"#146EB4"}>#281209</Td>
                                 <Td><Flex><Image src={green} mt={"4.5%"} mr={"2%"} w={2} h={2}/> <Text>Successful</Text></Flex> </Td>
                                 <Td>131634495747</Td>
                                 <Td>12 Jul 2023, 03:00 PM</Td>
                                 <Td>₹1,125.00</Td>
                             </Tr>
-                            <Tr >
+                            <Tr justifyContent={"space-between"} >
                                 <Td color={"#146EB4"}>#281209</Td>
                                 <Td><Flex><Image src={green} mt={"4.5%"} mr={"2%"} w={2} h={2}/> <Text>Successful</Text></Flex> </Td>
                                 <Td>131634495747</Td>
                                 <Td>12 Jul 2023, 03:00 PM</Td>
                                 <Td>₹1,125.00</Td>
                             </Tr>
-                            <Tr >
+                            <Tr justifyContent={"space-between"} >
                                 <Td color={"#146EB4"}>#281209</Td>
                                 <Td><Flex><Image src={green} mt={"4.5%"} mr={"2%"} w={2} h={2}/> <Text>Successful</Text></Flex> </Td>
                                 <Td>131634495747</Td>
                                 <Td>12 Jul 2023, 03:00 PM</Td>
                                 <Td>₹1,125.00</Td>
                             </Tr>
-                            <Tr >
+                            <Tr justifyContent={"space-between"} >
                                 <Td color={"#146EB4"}>#281209</Td>
                                 <Td><Flex><Image src={green} mt={"4.5%"} mr={"2%"} w={2} h={2}/> <Text>Successful</Text></Flex> </Td>
                                 <Td>131634495747</Td>

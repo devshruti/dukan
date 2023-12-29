@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box, Flex, Text, Input, InputGroup, InputLeftElement, Button, Grid, Image } from '@chakra-ui/react';
-import help from "../Assets/Help.png"
-import search from "../Assets/search.png"
+import help from "../Assets/Help.svg"
+import search from "../Assets/search.svg"
 import menu1 from "../Assets/Menu1.png"
 import menu from "../Assets/Menu.png"
 
@@ -23,7 +23,7 @@ const DashboardHeader = () => {
             <Box display="flex" h={"40px"} alignItems="center" justifyContent="center">
                 <Flex alignItems="center">
                     <Image src={help} w={3} h={3} />
-                    <Text ml="1" fontSize={"11px"}>How it works</Text>
+                    <Text ml="1" fontSize={"12px"}>How it works</Text>
                 </Flex>
             </Box>
 
