@@ -24,7 +24,7 @@ const Sidebar = () => {
     return (
         <Box
             w="190px"
-            h="100vh"
+            h="100%"
             bg="#1E2640"
             color="white"
             p="4 2 4 2"
@@ -32,7 +32,7 @@ const Sidebar = () => {
             left="0"
             top="0"
         >
-            <Flex m={3} h={"42px"}>
+            <Flex m={3} h={"5%"}>
                 <Image src={img} w={"39px"} h={"39px"} />
                 <Box marginLeft={2}>
                     <Text
@@ -288,6 +288,7 @@ const Sidebar = () => {
                 bg={"gray.700"}
                 opacity={"80%"}
                 borderRadius={"4px"}
+                mb={"20px"}
             >
                 <Flex
                     as="div"

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Box, Button, Flex, Image, Input, InputGroup, InputLeftElement, Select, Table, Tbody, Td, Text, Th, Thead, Tr } from '@chakra-ui/react';
+import { Box, Button, Center, Flex, Image, Input, InputGroup, InputLeftElement, Select, Table, Tbody, Td, Text, Th, Thead, Tr } from '@chakra-ui/react';
 import help from "../Assets/Help.svg"
 import helpW from "../Assets/HelpWhite.svg"
 import search from "../Assets/search.svg"
@@ -133,72 +133,72 @@ const Payouts = () => {
                 </Flex>
                 <Box>
                     <Table variant="simple" m={"auto"} w={"97%"}>
-                        <Thead bg={"#F2F2F2"}>
+                        <Thead bg={"#F2F2F2"} textAlign={"right"}>
                             <Tr justifyContent={"space-between"}>
-                                <Th>Order ID</Th>
-                                <Th>Status</Th>
-                                <Th>Transaction ID</Th>
-                                <Th>Order Amount</Th>
-                                <Th>Transaction Fee</Th>
-                                <Th>Total</Th>
+                                <Th textAlign={"right"}></Th>
+                                <Th textAlign={"right"}></Th>
+                                <Th textAlign={"right"}>Transaction ID</Th>
+                                <Th textAlign={"right"}>Order Amount</Th>
+                                <Th textAlign={"right"}>Transaction Fee</Th>
+                                <Th textAlign={"right"}>Total</Th>
                             </Tr>
                         </Thead>
-                        <Tbody color={"#1A181E"} fontSize={"14px"} >
+                        <Tbody color={"#1A181E"} fontSize={"14px"} textAlign={"right"}>
                             <Tr justifyContent={"space-between"} >
-                                <Td></Td>
-                                <Td><Flex><Image src={round} mt={"4.5%"} mr={"2%"} w={2} h={2}/> <Text>Processing</Text></Flex> </Td>
-                                <Td>131634495747</Td>
-                                <Td>₹10,125.00</Td>
-                                <Td>₹1,125.00</Td>
-                                <Td>₹9,312</Td>
+                                <Td textAlign={"right"}></Td>
+                                <Td textAlign={"right"}><Flex justifyContent={"right"}><Image src={round} mt={"4.5%"} mr={"2%"} w={2} h={2}/> <Text>Processing</Text></Flex> </Td>
+                                <Td textAlign={"right"}>131634495747</Td>
+                                <Td textAlign={"right"}>₹10,125.00</Td>
+                                <Td textAlign={"right"}>₹1,125.00</Td>
+                                <Td textAlign={"right"}>₹9,312</Td>
                             </Tr>
                             <Tr justifyContent={"space-between"} >
-                                <Td></Td>
-                                <Td><Flex><Image src={green} mt={"4.5%"} mr={"2%"} w={2} h={2}/> <Text>Successful</Text></Flex> </Td>
-                                <Td>131634495747</Td>
-                                <Td>₹10,125.00</Td>
-                                <Td>₹1,125.00</Td>
-                                <Td>₹9,312</Td>
+                                <Td textAlign={"right"}></Td>
+                                <Td textAlign={"right"}><Flex justifyContent={"right"}><Image src={green} mt={"4.5%"} mr={"2%"} w={2} h={2}/> <Text>Successful</Text></Flex> </Td>
+                                <Td textAlign={"right"}>131634495747</Td>
+                                <Td textAlign={"right"}>₹10,125.00</Td>
+                                <Td textAlign={"right"}>₹1,125.00</Td>
+                                <Td textAlign={"right"}>₹9,312</Td>
                             </Tr>
                             <Tr justifyContent={"space-between"} >
-                                <Td></Td>
-                                <Td><Flex><Image src={green} mt={"4.5%"} mr={"2%"} w={2} h={2}/> <Text>Successful</Text></Flex> </Td>
-                                <Td>131634495747</Td>
-                                <Td>₹10,125.00</Td>
-                                <Td>₹1,125.00</Td>
-                                <Td>₹9,312</Td>
+                                <Td textAlign={"right"}></Td>
+                                <Td textAlign={"right"}><Flex justifyContent={"right"}><Image src={green} mt={"4.5%"} mr={"2%"} w={2} h={2}/> <Text>Successful</Text></Flex> </Td>
+                                <Td textAlign={"right"}>131634495747</Td>
+                                <Td textAlign={"right"}>₹10,125.00</Td>
+                                <Td textAlign={"right"}>₹1,125.00</Td>
+                                <Td textAlign={"right"}>₹9,312</Td>
                             </Tr>
                             <Tr justifyContent={"space-between"} >
-                                <Td></Td>
-                                <Td><Flex><Image src={green} mt={"4.5%"} mr={"2%"} w={2} h={2}/> <Text>Successful</Text></Flex> </Td>
-                                <Td>131634495747</Td>
-                                <Td>₹10,125.00</Td>
-                                <Td>₹1,125.00</Td>
-                                <Td>₹9,312</Td>
+                                <Td textAlign={"right"}></Td>
+                                <Td textAlign={"right"}><Flex justifyContent={"right"}><Image src={green} mt={"4.5%"} mr={"2%"} w={2} h={2}/> <Text>Successful</Text></Flex> </Td>
+                                <Td textAlign={"right"}>131634495747</Td>
+                                <Td textAlign={"right"}>₹10,125.00</Td>
+                                <Td textAlign={"right"}>₹1,125.00</Td>
+                                <Td textAlign={"right"}>₹9,312</Td>
                             </Tr>
                             <Tr justifyContent={"space-between"} >
-                                <Td></Td>
-                                <Td><Flex><Image src={green} mt={"4.5%"} mr={"2%"} w={2} h={2}/> <Text>Successful</Text></Flex> </Td>
-                                <Td>131634495747</Td>
-                                <Td>₹10,125.00</Td>
-                                <Td>₹1,125.00</Td>
-                                <Td>₹9,312</Td>
+                                <Td textAlign={"right"}></Td>
+                                <Td textAlign={"right"}><Flex justifyContent={"right"}><Image src={green} mt={"4.5%"} mr={"2%"} w={2} h={2}/> <Text>Successful</Text></Flex> </Td>
+                                <Td textAlign={"right"}>131634495747</Td>
+                                <Td textAlign={"right"}>₹10,125.00</Td>
+                                <Td textAlign={"right"}>₹1,125.00</Td>
+                                <Td textAlign={"right"}>₹9,312</Td>
                             </Tr>
                             <Tr justifyContent={"space-between"} >
-                                <Td></Td>
-                                <Td><Flex><Image src={green} mt={"4.5%"} mr={"2%"} w={2} h={2}/> <Text>Successful</Text></Flex> </Td>
-                                <Td>131634495747</Td>
-                                <Td>₹10,125.00</Td>
-                                <Td>₹1,125.00</Td>
-                                <Td>₹9,312</Td>
+                                <Td textAlign={"right"}></Td>
+                                <Td textAlign={"right"}><Flex justifyContent={"right"}><Image src={green} mt={"4.5%"} mr={"2%"} w={2} h={2}/> <Text>Successful</Text></Flex> </Td>
+                                <Td textAlign={"right"}>131634495747</Td>
+                                <Td textAlign={"right"}>₹10,125.00</Td>
+                                <Td textAlign={"right"}>₹1,125.00</Td>
+                                <Td textAlign={"right"}>₹9,312</Td>
                             </Tr>
                             <Tr justifyContent={"space-between"} >
-                                <Td></Td>
-                                <Td><Flex><Image src={green} mt={"4.5%"} mr={"2%"} w={2} h={2}/> <Text>Successful</Text></Flex> </Td>
-                                <Td>131634495747</Td>
-                                <Td>₹10,125.00</Td>
-                                <Td>₹1,125.00</Td>
-                                <Td>₹9,312</Td>
+                                <Td textAlign={"right"}></Td>
+                                <Td textAlign={"right"}><Flex justifyContent={"right"}><Image src={green} mt={"4.5%"} mr={"2%"} w={2} h={2}/> <Text>Successful</Text></Flex> </Td>
+                                <Td textAlign={"right"}>131634495747</Td>
+                                <Td textAlign={"right"}>₹10,125.00</Td>
+                                <Td textAlign={"right"}>₹1,125.00</Td>
+                                <Td textAlign={"right"}>₹9,312</Td>
                             </Tr>
                         </Tbody>
                     </Table>
@@ -230,57 +230,57 @@ const Payouts = () => {
                 </Flex>
                 <Box>
                     <Table variant="simple" m={"auto"} p={4} w={"97%"} >
-                        <Thead bg={"#F2F2F2"}>
-                            <Tr justifyContent={"space-between"}>
-                                <Th>Order ID</Th>
-                                <Th>Status</Th>
-                                <Th>Transaction ID</Th>
-                                <Th>Refund date</Th>
-                                <Th>Order Amount</Th>
+                        <Thead bg={"#F2F2F2"} textAlign={"right"}>
+                            <Tr justifyContent={"space-between"} textAlign={"right"}>
+                                <Th textAlign={"right"}>Order ID</Th>
+                                <Th textAlign={"right"}>Status</Th>
+                                <Th textAlign={"right"}>Transaction ID</Th>
+                                <Th paddingLeft={"4.4%"}>Refund date</Th>
+                                <Th textAlign={"right"}>Order Amount</Th>
                             </Tr>
                         </Thead>
-                        <Tbody color={"#1A181E"} fontSize={"14px"} >
+                        <Tbody color={"#1A181E"} fontSize={"14px"} textAlign={"right"} >
                             <Tr justifyContent={"space-between"} >
-                                <Td color={"#146EB4"}>#281209</Td>
-                                <Td><Flex><Image src={round} mt={"4.5%"} mr={"2%"} w={2} h={2}/> <Text>Processing</Text></Flex> </Td>
-                                <Td>131634495747</Td>
-                                <Td>Today, 08:45 PM</Td>
-                                <Td>₹1,125.00</Td>
+                                <Td textAlign={"right"} color={"#146EB4"}>#281209</Td>
+                                <Td textAlign={"right"}><Flex justifyContent={"right"}><Image src={round} mt={"4.5%"} mr={"2%"} w={2} h={2}/> <Text>Processing</Text></Flex> </Td>
+                                <Td textAlign={"right"}>131634495747</Td>
+                                <Td paddingLeft={"4.4%"}>Today, 08:45 PM</Td>
+                                <Td textAlign={"right"}>₹1,125.00</Td>
                             </Tr>
                             <Tr justifyContent={"space-between"} >
-                                <Td color={"#146EB4"}>#281209</Td>
-                                <Td><Flex><Image src={green} mt={"4.5%"} mr={"2%"} w={2} h={2}/> <Text>Successful</Text></Flex> </Td>
-                                <Td>131634495747</Td>
-                                <Td>Yesterday, 3:00 PM</Td>
-                                <Td>₹1,125.00</Td>
+                                <Td textAlign={"right"} color={"#146EB4"}>#281209</Td>
+                                <Td textAlign={"right"}><Flex justifyContent={"right"}><Image src={green} mt={"4.5%"} mr={"2%"} w={2} h={2}/> <Text textAlign={"right"}>Successful</Text></Flex> </Td>
+                                <Td textAlign={"right"}>131634495747</Td>
+                                <Td paddingLeft={"4.4%"}>Yesterday, 3:00 PM</Td>
+                                <Td textAlign={"right"}>₹1,125.00</Td>
                             </Tr>
                             <Tr justifyContent={"space-between"} >
-                                <Td color={"#146EB4"}>#281209</Td>
-                                <Td><Flex><Image src={green} mt={"4.5%"} mr={"2%"} w={2} h={2}/> <Text>Successful</Text></Flex> </Td>
-                                <Td>131634495747</Td>
-                                <Td>12 Jul 2023, 03:00 PM</Td>
-                                <Td>₹1,125.00</Td>
+                                <Td textAlign={"right"} color={"#146EB4"}>#281209</Td>
+                                <Td textAlign={"right"}><Flex justifyContent={"right"}><Image src={green} mt={"4.5%"} mr={"2%"} w={2} h={2}/> <Text>Successful</Text></Flex> </Td>
+                                <Td textAlign={"right"}>131634495747</Td>
+                                <Td paddingLeft={"4.2%"}>12 Jul 2023, 03:00 PM</Td>
+                                <Td textAlign={"right"}>₹1,125.00</Td>
                             </Tr>
                             <Tr justifyContent={"space-between"} >
-                                <Td color={"#146EB4"}>#281209</Td>
-                                <Td><Flex><Image src={green} mt={"4.5%"} mr={"2%"} w={2} h={2}/> <Text>Successful</Text></Flex> </Td>
-                                <Td>131634495747</Td>
-                                <Td>12 Jul 2023, 03:00 PM</Td>
-                                <Td>₹1,125.00</Td>
+                                <Td textAlign={"right"} color={"#146EB4"}>#281209</Td>
+                                <Td textAlign={"right"}><Flex justifyContent={"right"}><Image src={green} mt={"4.5%"} mr={"2%"} w={2} h={2}/> <Text>Successful</Text></Flex> </Td>
+                                <Td textAlign={"right"}>131634495747</Td>
+                                <Td paddingLeft={"4.2%"}>12 Jul 2023, 03:00 PM</Td>
+                                <Td textAlign={"right"}>₹1,125.00</Td>
                             </Tr>
                             <Tr justifyContent={"space-between"} >
-                                <Td color={"#146EB4"}>#281209</Td>
-                                <Td><Flex><Image src={green} mt={"4.5%"} mr={"2%"} w={2} h={2}/> <Text>Successful</Text></Flex> </Td>
-                                <Td>131634495747</Td>
-                                <Td>12 Jul 2023, 03:00 PM</Td>
-                                <Td>₹1,125.00</Td>
+                                <Td textAlign={"right"} color={"#146EB4"}>#281209</Td>
+                                <Td textAlign={"right"}><Flex justifyContent={"right"}><Image src={green} mt={"4.5%"} mr={"2%"} w={2} h={2}/> <Text>Successful</Text></Flex> </Td>
+                                <Td textAlign={"right"}>131634495747</Td>
+                                <Td paddingLeft={"4.2%"}>12 Jul 2023, 03:00 PM</Td>
+                                <Td textAlign={"right"}>₹1,125.00</Td>
                             </Tr>
                             <Tr justifyContent={"space-between"} >
-                                <Td color={"#146EB4"}>#281209</Td>
-                                <Td><Flex><Image src={green} mt={"4.5%"} mr={"2%"} w={2} h={2}/> <Text>Successful</Text></Flex> </Td>
-                                <Td>131634495747</Td>
-                                <Td>12 Jul 2023, 03:00 PM</Td>
-                                <Td>₹1,125.00</Td>
+                                <Td textAlign={"right"} color={"#146EB4"}>#281209</Td>
+                                <Td textAlign={"right"}><Flex justifyContent={"right"}><Image src={green} mt={"4.5%"} mr={"2%"} w={2} h={2}/> <Text>Successful</Text></Flex> </Td>
+                                <Td textAlign={"right"}>131634495747</Td>
+                                <Td paddingLeft={"4.2%"}>12 Jul 2023, 03:00 PM</Td>
+                                <Td textAlign={"right"}>₹1,125.00</Td>
                             </Tr>
                         </Tbody>
                     </Table>
