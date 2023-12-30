@@ -32,7 +32,7 @@ const Sidebar = () => {
             left="0"
             top="0"
         >
-            <Flex m={2}>
+            <Flex m={3} h={"42px"}>
                 <Image src={img} w={"39px"} h={"39px"} />
                 <Box marginLeft={2}>
                     <Text
@@ -46,7 +46,7 @@ const Sidebar = () => {
                     
                         <Text
                             fontWeight="400"
-                            fontSize="12px"
+                            fontSize="13px"
                             lineHeight={"16px"}
                             textDecoration={"underline"}
                         ><Link>Visit store</Link></Text>
@@ -62,10 +62,12 @@ const Sidebar = () => {
                         w="96%"
                         m={"auto"}
                         fontSize="14px"
-                        padding="9px 10px"
-                        h="34px"
+                        padding="8px 16px"
+                        h="36px"
                         gap="12px"
-                        borderRadius={4}
+                        borderRadius={"4px"}
+                        lineHeight={"20px"}
+                        fontWeight={500}
                         bg={isActive('/home') ? 'gray.700' : 'transparent'} // Highlight active link
                     >
                         <Image src={home} w={4} h={4} />
@@ -80,10 +82,12 @@ const Sidebar = () => {
                         w="96%"
                         m={"auto"}
                         fontSize="14px"
-                        padding="9px 10px"
-                        h="34px"
+                        padding="8px 16px"
+                        h="36px"
                         gap="12px"
-                        borderRadius={4}
+                        borderRadius={"4px"}
+                        lineHeight={"20px"}
+                        fontWeight={500}
                         backgroundColor={isActive('/orders') ? 'gray.700' : 'transparent'}
                     >
                         <Image src={order} w={4} h={4} />
@@ -98,10 +102,12 @@ const Sidebar = () => {
                         w="96%"
                         m={"auto"}
                         fontSize="14px"
-                        padding="9px 10px"
-                        h="34px"
+                        padding="8px 16px"
+                        h="36px"
                         gap="12px"
-                        borderRadius={4}
+                        borderRadius={"4px"}
+                        lineHeight={"20px"}
+                        fontWeight={500}
                         bg={isActive('/products') ? 'gray.700' : 'transparent'}
                     >
                         <Image src={product} w={4} h={4} />
@@ -116,10 +122,12 @@ const Sidebar = () => {
                         w="96%"
                         m={"auto"}
                         fontSize="14px"
-                        padding="9px 10px"
-                        h="34px"
+                        padding="8px 16px"
+                        h="36px"
                         gap="12px"
-                        borderRadius={4}
+                        borderRadius={"4px"}
+                        lineHeight={"20px"}
+                        fontWeight={500}
                         bg={isActive('/delivery') ? 'gray.700' : 'transparent'}
                     >
                         <Image src={delivery} w={4} h={4} />
@@ -134,10 +142,12 @@ const Sidebar = () => {
                         w="96%"
                         m={"auto"}
                         fontSize="14px"
-                        padding="9px 10px"
-                        h="34px"
+                        padding="8px 16px"
+                        h="36px"
                         gap="12px"
-                        borderRadius={4}
+                        borderRadius={"4px"}
+                        lineHeight={"20px"}
+                        fontWeight={500}
                         bg={isActive('/marketing') ? 'gray.700' : 'transparent'}
                     >
                         <Image src={marketing} w={4} h={4} />
@@ -152,10 +162,12 @@ const Sidebar = () => {
                         w="96%"
                         m={"auto"}
                         fontSize="14px"
-                        padding="9px 10px"
-                        h="34px"
+                        padding="8px 16px"
+                        h="36px"
                         gap="12px"
-                        borderRadius={4}
+                        borderRadius={"4px"}
+                        lineHeight={"20px"}
+                        fontWeight={500}
                         bg={isActive('/analytics') ? 'gray.700' : 'transparent'}
                     >
                         <Image src={analytic} w={4} h={4} />
@@ -170,10 +182,12 @@ const Sidebar = () => {
                         w="96%"
                         m={"auto"}
                         fontSize="14px"
-                        padding="9px 10px"
-                        h="34px"
+                        padding="8px 16px"
+                        h="36px"
                         gap="12px"
-                        borderRadius={4}
+                        borderRadius={"4px"}
+                        lineHeight={"20px"}
+                        fontWeight={500}
                         bg={isActive('/payouts') ? 'gray.700' : 'transparent'}
                     >
                         <Image src={Payouts} w={4} h={4} />
@@ -188,10 +202,12 @@ const Sidebar = () => {
                         w="96%"
                         m={"auto"}
                         fontSize="14px"
-                        padding="9px 10px"
-                        h="34px"
+                        padding="8px 16px"
+                        h="36px"
                         gap="12px"
-                        borderRadius={4}
+                        borderRadius={"4px"}
+                        lineHeight={"20px"}
+                        fontWeight={500}
                         bg={isActive('/discounts') ? 'gray.700' : 'transparent'}
                     >
                         <Image src={Discounts} w={4} h={4} />
@@ -206,10 +222,12 @@ const Sidebar = () => {
                         w="96%"
                         m={"auto"}
                         fontSize="14px"
-                        padding="9px 10px"
-                        h="34px"
+                        padding="8px 16px"
+                        h="36px"
                         gap="12px"
-                        borderRadius={4}
+                        borderRadius={"4px"}
+                        lineHeight={"20px"}
+                        fontWeight={500}
                         bg={isActive('/audience') ? 'gray.700' : 'transparent'}
                     >
                         <Image src={Audience} w={4} h={4} />
@@ -224,10 +242,12 @@ const Sidebar = () => {
                         w="96%"
                         m={"auto"}
                         fontSize="14px"
-                        padding="9px 10px"
-                        h="34px"
+                        padding="8px 16px"
+                        h="36px"
                         gap="12px"
-                        borderRadius={4}
+                        borderRadius={"4px"}
+                        lineHeight={"20px"}
+                        fontWeight={500}
                         bg={isActive('/appearance') ? 'gray.700' : 'transparent'}
                     >
                         <Image src={Appearance} w={4} h={4} />
@@ -242,10 +262,13 @@ const Sidebar = () => {
                         w="96%"
                         m={"auto"}
                         fontSize="14px"
-                        padding="9px 10px"
-                        h="34px"
+                        padding="8px 16px"
+                        h="36px"
                         gap="12px"
-                        borderRadius={4}
+                        borderRadius={"4px"}
+                        lineHeight={"20px"}
+                        fontWeight={500}
+                        // wordBreak={"break-word"}
                         bg={isActive('/plugins') ? 'gray.700' : 'transparent'}
                     >
                         <Image src={Plugins} w={4} h={4} />
@@ -258,19 +281,19 @@ const Sidebar = () => {
                 align="center"
                 justifyContent="flex-start"
                 padding="18px 0px"
-                w="95%"
+                w="92%"
                 fontSize="14px"
                 h="44px"
                 m="auto"
                 bg={"gray.700"}
                 opacity={"80%"}
-                borderRadius={4}
+                borderRadius={"4px"}
             >
                 <Flex
                     as="div"
                     align="center"
                     justifyContent="flex-start"
-                    w="160px"
+                    w="180px"
                     margin={"-6px"}
                     fontSize="14px"
                     padding="8px 16px 8px 16px"
@@ -279,19 +302,21 @@ const Sidebar = () => {
                     <Image src={frame} w={8} h={8} />
                     <Box marginLeft={1}>
                     <Text
-                        fontSize="10px"
+                        fontSize="13px"
                         fontWeight="400"
                         lineHeight="16px"
                         letterSpacing="0em"
                         textAlign="left"
                         color="#FFFFFF"
+                        fontFamily='Inter'
                     >Available credits</Text>
                     <Link>
                         <Text
                             fontWeight="500"
-                            fontSize="15px"
-                            lineHeight={"15px"}
+                            fontSize="16px"
+                            lineHeight={"24px"}
                             textAlign={"left"}
+                            color="#FFFFFF"
                         >222.10</Text></Link>
                 </Box>
                 </Flex>

@@ -36,45 +36,45 @@ const Payouts = () => {
                     </Select>
                 </Flex>
                 <Flex justify={"space-evenly"} mt={4} w={"full"} borderRadius={4} >
-                    <Box w={"30%"} borderRadius={6} bg={"#146EB4"} mb={"2.1%"}>
-                        <Box p={4} bg={"#146EB4"} borderRadius={6} color={"#FFFFFF"}  >
-                            <Flex m={"2%"}>
-                                <Text fontSize={"13px"} fontWeight={400} lineHeight={"22px"}>Next Payout</Text>
-                                <Image src={helpW} w={3} h={3} m={"1.4%"} />
+                    <Box w={"30%"} borderRadius={"8px"} bg={"#146EB4"} mb={"2.1%"}>
+                        <Box p={4} bg={"#146EB4"} borderRadius={"8px"} color={"#FFFFFF"}  >
+                            <Flex m={"2%"} position={"relative"}>
+                                <Text fontSize={"16px"} fontWeight={400} lineHeight={"22px"}>Next Payout</Text>
+                                <Image src={helpW} w={4} h={4} m={"0.5% 2%"} />
                             </Flex>
                             <Flex m={"2%"} justify={"space-between"}>
-                                <Text fontSize={"30px"} fontWeight={600} lineHeight={"34px"}>₹2,312.23</Text>
-                                <Flex> <Text fontSize={"13px"} fontWeight={400} lineHeight={"22px"} textDecoration={"underline"}>23 orders  </Text>
-                                    <Image src={right} w={3} h={3} mt={"8%"} />  </Flex></Flex>
+                                <Text fontSize={"32px"} fontWeight={600} lineHeight={"34px"}>₹2,312.23</Text>
+                                <Flex> <Text fontSize={"16px"} fontWeight={400} lineHeight={"22px"} textDecoration={"underline"}>23 orders  </Text>
+                                    <Image src={right} w={4} h={4} mt={"6%"} />  </Flex></Flex>
                         </Box>
-                        <Box color={"#FFFFFF"} borderRadius={6}>
-                            <Flex p={"2.5% 5%"} justify={"space-between"} borderRadius={6} bg={"#0E4F82"}>
-                                <Text fontSize={"11px"} fontWeight={600} lineHeight={"20px"}>Next payout date:</Text>
-                                <Text fontSize={"11px"} fontWeight={600} lineHeight={"20px"}>Today, 04:00PM</Text>
+                        <Box color={"#FFFFFF"} borderRadius={"8px"} bg={"#0E4F82"} pb={"8px"}>
+                            <Flex p={"2.5% 5%"} justify={"space-between"} borderRadius={"8px"} >
+                                <Text fontSize={"14px"} fontWeight={400} lineHeight={"20px"}>Next payout date:</Text>
+                                <Text fontSize={"14px"} fontWeight={500} lineHeight={"20px"}>Today, 04:00PM</Text>
                             </Flex>
                         </Box>
                     </Box>
-                    <Box w={"30%"} borderRadius={6} p={4} bg={"#FFFFFF"} mb={"5%"} boxShadow={"0px 2px 6px rgba(26, 24, 30, 0.04)"}>
+                    <Box w={"30%"} borderRadius={"8px"} p={4} bg={"#FFFFFF"} mb={"5%"} boxShadow={"0px 2px 6px rgba(26, 24, 30, 0.04)"}>
                         <Flex m={"2%"}>
-                            <Text fontSize={"13px"} fontWeight={400} lineHeight={"22px"} color={"#4D4D4D"} >Amount Pending</Text>
-                            <Image src={help} w={3} h={3} m={"1.4%"} />
+                            <Text fontSize={"16px"} fontWeight={400} lineHeight={"22px"} color={"#4D4D4D"} >Amount Pending</Text>
+                            <Image src={help}  w={4} h={4} m={"0.5% 2%"} />
                         </Flex>
                         <Flex m={"2%"} justify={"space-between"}>
-                            <Text fontSize={"30px"} fontWeight={600} lineHeight={"34px"}>₹92,312.20</Text>
+                            <Text fontSize={"32px"} fontWeight={600} lineHeight={"34px"}>₹92,312.20</Text>
                             <Flex>
-                            <Text fontSize={"13px"} fontWeight={500} lineHeight={"22px"} color={"#146EB4"} textDecoration={"underline"} >13 orders</Text>
-                            <Image src={right1} w={3} h={3} mt={"8%"} />
+                            <Text fontSize={"16px"} fontWeight={500} lineHeight={"22px"} color={"#146EB4"} textDecoration={"underline"} >13 orders</Text>
+                            <Image src={right1}  w={4} h={4} mt={"6%"} />
                        </Flex>
                         </Flex>
 
                     </Box>
-                    <Box w={"30%"} borderRadius={6} p={4} bg={"#FFFFFF"} mb={"5%"} boxShadow={"0px 2px 6px rgba(26, 24, 30, 0.04)"} >
+                    <Box w={"30%"} borderRadius={"8px"} p={4} bg={"#FFFFFF"} mb={"5%"} boxShadow={"0px 2px 6px rgba(26, 24, 30, 0.04)"} >
                         <Flex m={"2%"}>
                             <Text fontSize={"13px"} fontWeight={400} lineHeight={"22px"} color={"#4D4D4D"}>Amount Processed</Text>
-                            <Image src={help} w={3} h={3} m={"1.4%"} />
+                            <Image src={help}  w={4} h={4} m={"0.5% 2%"} />
                         </Flex>
                         <Flex m={"2%"} justify={"space-between"}>
-                            <Text fontSize={"30px"} fontWeight={600} lineHeight={"34px"}>₹23,92,312.19</Text>
+                            <Text fontSize={"32px"} fontWeight={600} lineHeight={"34px"}>₹23,92,312.19</Text>
                             {/* <Text fontSize={"13px"} fontWeight={400} lineHeight={"22px"}>23 orders</Text> */}
                         </Flex>
 
