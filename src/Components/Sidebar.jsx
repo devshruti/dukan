@@ -53,7 +53,7 @@ const Sidebar = () => {
                 </Box>
                 <Image src={chevron} w={"18px"} h={"14px"} top={3} left={8} position={"relative"} />
             </Flex>
-            <Box mt={8} h={"83%"}>
+            <Box mt={8} >
                 <Link to="/home">
                     <Flex
                         as="div"
@@ -279,7 +279,6 @@ const Sidebar = () => {
             <Flex
                 as="div"
                 align="center"
-                justifyContent="flex-start"
                 padding="18px 0px"
                 w="92%"
                 fontSize="14px"
@@ -288,16 +287,19 @@ const Sidebar = () => {
                 bg={"gray.700"}
                 opacity={"80%"}
                 borderRadius={"4px"}
-                mb={"20px"}
+                position={"absolute"}
+                bottom={3.5}
+                left={1.5}
+                // mb={"20px"}
             >
                 <Flex
                     as="div"
                     align="center"
-                    justifyContent="flex-start"
                     w="180px"
                     margin={"-6px"}
                     fontSize="14px"
                     padding="8px 16px 8px 16px"
+                    alignContent={"flex-end"}
                     h="34px"
                     gap="10px">
                     <Image src={frame} w={8} h={8} />
